@@ -3,6 +3,9 @@ N_MAX = 15
 
 def read_array():
     n = int(input("Enter number of elements: "))
+    if n > N_MAX:
+        print("Error: number of elements exceeds N_MAX =", N_MAX)
+        n = N_MAX
     arr = []
     print("Enter elements:")
     i = 0
